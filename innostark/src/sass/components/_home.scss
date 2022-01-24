@@ -1,0 +1,78 @@
+.home_container{
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+    .prodcuts{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 20px;
+        row-gap: 30px;
+        .product{
+            height:250px;
+            width:250px;
+            box-shadow: 0 0 3px lightgrey;
+            background: #f7f7fb;;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding:15px 0px;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            &:hover, &:focus{
+                background:white;
+                transform:scaleY(1.04)
+            }
+            .prod_name{
+                width: 100%;
+                height:40px;
+                color:#fc5185;
+                text-transform: capitalize;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .prod_description{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                margin: 6px 0px;
+                overflow: hidden;
+                width: 100%;
+                height:100px;
+                text-transform: capitalize;
+                
+                span{
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                }
+            }
+            .prod_price{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+               width: 100%;
+               height:40px;
+               span{
+                
+                font-weight: 650;
+                color:gray;
+                
+               }
+            }
+            .prod_inventory{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height:40px;
+                
+            }
+        }
+    }
+}
